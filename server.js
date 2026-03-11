@@ -51,8 +51,8 @@ app.post("/send", upload.array("attachments"), async (req, res) => {
   res.json({ success: true });
 });
 
-server.listen(8000, () => {
-  console.log("Server running on port 8000");
+server.listen(8080, () => {
+  console.log("Server running on port 8080");
 });
 
 module.exports = app;
