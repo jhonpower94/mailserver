@@ -51,7 +51,7 @@ app.post("/send", upload.array("attachments"), async (req, res) => {
   res.json({ success: true });
 });
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 8080;
 
 server.listen(PORT, "0.0.0.0", () => {
   console.log(`Server running on port ${PORT}`);
